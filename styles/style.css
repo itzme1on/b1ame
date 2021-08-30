@@ -1,0 +1,317 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d8d8d8;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.profile-bg-color {
+    overflow: hidden;
+    height: 330px;
+    background: linear-gradient(45deg, #63005f, #c901bf);
+}
+
+.section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 65px;
+}
+
+.section-container {
+    width: 90%;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.profile-info-section {
+    cursor: default;
+}
+
+.profile-info-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: -200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    box-shadow: 0 18px 45px 0 rgb(0 0 0 / 13%);
+}
+
+.profile-info-top {
+    position: relative;
+    display: flex;
+    margin-top: -60px;
+    padding-bottom: 25px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info-top-image {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    border-radius: 50%;
+    box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+    transition: 0.5s ease;
+}
+
+.profile-info-top-image:hover {
+    border-radius: 10%;
+    transition: 0.5s ease;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-info-bottom {
+    display: flex;
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-info-bottom-name {
+    position: relative;
+    display: flex;
+}
+
+.profile-name {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 31px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profile-info-bottom-country {
+    display: flex;
+    font-weight: 400;
+    color: #929292;
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.section.link-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.link-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.link-item {
+    display: flex;
+    width: 49%;
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    transition: transform .3s ease;
+}
+
+.link-item:hover {
+    transform: scale(1.03);
+    transition: transform .3s ease;
+}
+
+.link-button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 14px 30px -5px rgb(0 0 0 / 13%);
+    color: #1a1a1a;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.link-item-icon {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.link-item-text {
+    overflow: hidden;
+    padding-left: 90px;
+}
+
+.link-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.link-url {
+    color: #929292;
+    font-size: 13px;
+}
+
+.footer-section {
+    padding: 0 0 8px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: center;
+    color: #929292;
+}
+
+.footer-wrapper > p > a {
+    color: #929292;
+    text-decoration: none;
+}
+
+.footer-wrapper > p > a:hover {
+    color: #1a1a1a;
+    border-bottom: 1px solid;
+}
+
+.footer-wrapper > p {
+    cursor: default;
+    color: #929292;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        width: 100%;
+    }
+
+    .profile-info-wrapper {
+        border-radius: 0;
+    }
+
+    .profile-info-bottom {
+        padding: 0 10px;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .link-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .link-url {
+        display: none;
+    }
+}
